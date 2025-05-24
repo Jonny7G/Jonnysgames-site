@@ -1,9 +1,19 @@
+---
+navs:
+- Home
+- Contact
+- About
+navlinks:
+- index.html
+- contact.html
+- about.html
+---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>
-      Jonny's Games
+      {{ title }}
     </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,25 +22,13 @@
   <body>
     <nav class="navbar">
       <ul>
-        
+        {% for i in (0..2) %}
           <li>
-            <a href="index.html">
-              <h3>Home</h3>
+            <a href="{{navlinks[i]}}">
+              <h3>{{ navs[i] }}</h3>
             </a>
           </li>
-        
-          <li>
-            <a href="contact.html">
-              <h3>Contact</h3>
-            </a>
-          </li>
-        
-          <li>
-            <a href="about.html">
-              <h3>About</h3>
-            </a>
-          </li>
-        
+        {% endfor %}
       </ul>
     </nav>
   </body>
