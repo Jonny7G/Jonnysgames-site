@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: rgb(36, 36, 36);
+    background-image: url(/img/16-9-vhs.jpg);
     color: white;
 }
 
@@ -9,14 +9,13 @@ main{
     margin-right: 20px;
 }
 
-h1{
-    text-align: center;
-}
-
 .navbar{
+    background-color: rgba(0, 0, 0, 0.466);
     padding-top: 1.5%;
-    align-items: center;
     display :flex;
+    padding-bottom: 0%;
+    border-bottom: 0%;
+    margin-bottom: 0%;
     justify-content: center;
 }
 
@@ -30,15 +29,20 @@ h1{
 .navbar a{
     color: red;
     text-decoration: none;
-    padding: 15px;
+    padding-right: 15px;
+    padding-bottom: 0%;
     display: block;
     text-align: center;
 }
 
 .navbar a:hover{
-    background-color: hsl(0, 0%, 10%);
+    color: rgb(78, 0, 0);
 }
 
 .navbar li{
     float: left;
+}
+
+h3{
+    font-size: 60px;
 }

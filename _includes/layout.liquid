@@ -1,14 +1,3 @@
----
-navs:
-- Home
-- Contact
-- About
-navlinks:
-- index.html
-- contact.html
-- about.html
----
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,14 +11,17 @@ navlinks:
   <body>
     <nav class="navbar">
       <ul>
-        {% for i in (0..2) %}
+        {% for item in navmenu %}
           <li>
-            <a href="{{navlinks[i]}}">
-              <h3>{{ navs[i] }}</h3>
+            <a href="{{item.url}}">
+              <h3>{{ item.name }}</h3>
             </a>
           </li>
         {% endfor %}
       </ul>
     </nav>
+    <main>
+      {{ content }}
+    </main>
   </body>
 </html>

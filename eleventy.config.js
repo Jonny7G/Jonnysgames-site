@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget("css/**/*.css");
-  //eleventyConfig.addPassthroughCopy("content/css");
+  //eleventyConfig.addWatchTarget("css/**/*.css");
+  eleventyConfig.addPassthroughCopy("content/css");
+  eleventyConfig.addPassthroughCopy("content/img");
 };
 
 module.exports.config = {
