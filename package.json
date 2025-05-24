@@ -1,0 +1,23 @@
+{
+  "name": "jonnysgames-site-src",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonny7G/Jonnysgames-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonny7G/Jonnysgames-site/issues"
+  },
+  "homepage": "https://github.com/Jonny7G/Jonnysgames-site#readme",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.0"
+  }
+}
