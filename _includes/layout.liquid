@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
-    <nav class="navbar">
+    <div class="layout">
+    <h1>JONNY'S GAMES</h1>
+    {% comment %} <nav class="navbar">
       <ul>
         {% for item in navmenu %}
           <li>
@@ -19,8 +21,9 @@
           </li>
         {% endfor %}
       </ul>
-    </nav>
-    <main>
+    </nav> {% endcomment %}
+    </div>
+    <main class="content">
       {{ content }}
     </main>
   </body>

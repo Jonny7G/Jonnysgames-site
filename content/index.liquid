@@ -2,3 +2,39 @@
 title: Jonny's Games
 layout: layout.liquid
 ---
+<div>
+  <div>
+  <h2>About</h2>
+    <p>
+      A solo horror game developer that explores themes such as the paranormal, cryptids, the occult, and the psychological. 
+      I take heavy inspiration from horror movies, mainly the found footage genre. 
+      Gameplay tends to lean heavily towards walking simulators or survival horror but always focuses on building an immersive and scary experience for the player.
+    </p>
+  </div>
+  <div>
+  <h2>Games</h2>
+    <p><i>All my major game releases so far.</i></p>
+    <p>
+        <ul>
+          {% for item in games %}
+            <li>
+              <h3>
+                <a href="{{item.url}}">
+                    {{ item.name }}
+                </a>
+              </h3>
+            </li>
+          {% endfor %}
+        </ul>
+    </p>
+  </div>
+  <div>
+  <h2>Contact & Follow</h2>
+    <p>email: jonnysgames7@gmail.com</p>
+    <p><a href="https://jonnys-games.itch.io/">itch.io page</a></p>
+    <p><a href="https://store.steampowered.com/curator/44988594">steam developer page</a></p>
+    <p><a href="https://bsky.app/profile/jonnysgames.bsky.social">bluesky</a></p>
+  </div>
+  <div class="footer">
+  </div>
+</div>
